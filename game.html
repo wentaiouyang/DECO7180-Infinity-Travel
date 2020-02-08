@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/strip.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Infinity Travel</title>
+</head>
+<body onload="startGame()">
+    <div class="header">
+			<!-- onmousedown="RestartGame()" -->
+        <h1 class="title">INFINITY TRAVEL</h1>
+		<button class="gamebtn btn btnActive" onmousedown="RestartGame()">GAME</button>
+		<button class="gallery btn" >GALLERY</button>
+	</div>
+	<div id="loadin"></div>
+	<div class="gameoverbox">
+		<p class="gameover">Game Over</p>
+		<button class="restartbtn" onclick="RestartGame()">RESTART</button>
+	</div>
+	<div class="poppic">
+		<p>You got a new photo</p>
+	</div>
+	<div class="game">
+		<canvas id="c" width="1600" height="500"></canvas>
+		<p class="intro">Press <span>SPACE</span> to jump</p>
+	</div>
+	<div class="gallerypic">
+		<div id="pictures"></div>
+	</div>
+
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/strip.pkgd.min.js"></script>
+    <script src="./js/game.js"></script>
+</body>
+</html>

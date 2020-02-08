@@ -1,0 +1,217 @@
+#c {
+    background-position: center center;
+    background-size: cover;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    right: 0px;
+    width:94%;
+    height: 60vh;
+    
+}
+
+.header {
+    height: 150px;
+    width:  100%;
+    display: flex;
+    align-items: baseline;
+    
+}
+
+.header > h1 {
+    color: #F7E618;
+    font-size: 50px;
+    margin-left: 150px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.intro {
+    color: white;
+    position: absolute;
+    bottom:5%;
+    font-size: 25px;
+    margin-left: 150px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    font-size: 20px;
+    margin-left: 120px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+}
+
+.poppic {
+    width: 100%;
+    height: 100%;
+}
+
+.btn:hover {
+    color: rgb(247, 214, 24);
+    border: rgb(247, 214, 24) 2px solid;
+    padding: 12px 17px;
+    border-radius: 5px;
+
+}
+
+.intro > span {
+    border: white 2px solid;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 12px 17px;
+    position: relative;
+    top:-5px;
+
+}
+
+body {
+    background-color: rgb(2, 2, 2);
+}
+
+#pictures {
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    right: 0px;
+    width:94%;
+    height: 60vh;
+    overflow: auto;
+    background-color: aliceblue;
+    display:flex;
+    align-items: center;
+    
+}
+
+#pictures img {
+    border:2px solid rgb(114, 114, 114);
+}
+
+.record {
+    width: auto;
+    display: inline-block;
+    
+}
+
+.record > img {
+    border-radius: 10px;
+    height: 430px;
+    margin: 20px;
+}
+
+.gallerypic {
+    display: none;
+    transition: all 600ms ease-in-out;
+}
+
+.game {
+    width: 100%;
+    height: 500px;
+}
+
+.active {
+    display: flex!important;
+    
+}
+
+.notActive {
+    display: none;
+}
+
+.btnActive {
+    color: rgb(247, 214, 24);
+    border: rgb(247, 214, 24) 2px solid;
+    padding: 12px 17px;
+    border-radius: 5px;
+}
+
+.gameover {
+    text-align: center;
+    font-size: 60px;
+    margin: 0%;
+    color: black;
+    font-family: 'Press Start 2P', cursive; 
+}
+
+.gameoverbox {
+    display: none; 
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.restartbtn {
+    text-align: center;
+    position: absolute;
+    top: 190%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    border-color: blueviolet;
+    font-family: 'Press Start 2P', cursive; 
+    color: blueviolet;
+    border-radius: 5px;
+}
+
+.fail {
+    display: block;
+}
+
+#loading {
+	width:100%;
+	height:100vh;
+	background:white url(../images/loading.gif) center center no-repeat;
+	position: fixed;
+	z-index: 2;
+	margin: 0px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	transition: all ease-in-out 200ms;
+}
+
+body.loaded #loading {
+	opacity: 0;
+	visibility: hidden; /* Good practice to include as a fallback to opacity */
+}
+
+.poppic{
+    z-index: 200;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    height:500px;
+    width:auto;
+    background-color: rgba(0, 0, 0, 0.753);
+    flex-direction: column;
+    display: none;
+    
+}
+
+.poppic img{
+    height:400px;
+    margin:0px 40px;
+    border-radius: 15px;
+}
+
+.poppic p {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
