@@ -1,4 +1,6 @@
 # DECO7180-Infinity-Travel
+## DEMO
+https://wentaiouyang.github.io/DECO7180-Infinity-Travel/
 ## About our project
 Our project is about a game-based website called Infinity Travel, which is a simple retro game presented in a relatively old pixel style, it not only provides people who prefer this kind of game a way to entertain, but also brings them a precious memory back to the past. Also this application presents the history of Queensland by showing players the people and places of Queensland in days of yore, which again reflects the core concept of this game - to show our yearn and respect to those memorable times in the past.
 ## Inspiration
