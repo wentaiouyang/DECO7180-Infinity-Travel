@@ -2,36 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Infinity Travel Welcome Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Infinity Travel · Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style_welcome.css">
     <script src="https://kit.fontawesome.com/4455f1d672.js" crossorigin="anonymous"></script>
     <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/script_welcome.js"> </script>
+    <script src="./js/script_welcome.js"></script>
 </head>
 <body>
-<div class="stars"></div>
-<div class="mainpage">
-    <div class="centered">
-        <span class="welcome" data-text="Welcome to the">Welcome to the</span>
-        <span class="infinity_travel" data-text="INFINITY TRAVEL">INFINITY TRAVEL</span>
-    </div>
-    <a class="arrow" href="#">
-        <i class="fas fa-angle-double-down"></i>
-    </a>
-</div>
-<div class="content">
-    <article class="about">
-        <p>
-            Hey there ! You are now sitting in a time machine, waiting to explore the time tunnel. There are many
-            obstacles floating in the tunnel, trying to avoid them and survive !
+<div class="stars" aria-hidden="true"></div>
+
+<header class="hero">
+    <div class="hero__content">
+        <p class="hero__eyebrow">Retro arcade adventure</p>
+        <h1 class="hero__title gradient-text">
+            <span class="hero__title-top">Welcome to</span>
+            <span class="hero__title-main">Infinity Travel</span>
+        </h1>
+        <p class="hero__subtitle">
+            Pilot your time machine through a neon time tunnel. Dodge asteroids, chase highscores, and unlock memories from every era.
         </p>
-        <img src="./statics/game_intro.png" width="600" height="350">
+        <div class="hero__actions">
+            <a class="cta primary" href="./game.html">Start the mission</a>
+            <a class="cta secondary" href="#about">What is Infinity Travel?</a>
+        </div>
+    </div>
+</header>
+
+<main class="content" id="about">
+    <article class="about">
+        <header class="about__header">
+            <p class="eyebrow">Mission briefing</p>
+            <h2>Survive the time tunnel</h2>
+        </header>
         <p>
-            Isn't it exciting :) What are you waiting for ? Let's <a href="./game.html">START NOW</a> !
+            Hey there, pilot! You are strapped inside a time machine that just booted up. The tunnel is unstable, riddled with floating obstacles and hidden relics. React fast, keep your hovercraft grounded, and the tunnel might just let you through.
+        </p>
+        <ul class="feature-list">
+            <li><strong>Arcade-tight controls:</strong> Tap <span class="keycap">SPACE</span> at the perfect moment to dodge the debris.</li>
+            <li><strong>Procedural obstacles:</strong> Every run spawns a fresh path, so there is always a new pattern to learn.</li>
+            <li><strong>Unlockable memories:</strong> Snap rare photos during your run and build a gallery of timelines you saved.</li>
+        </ul>
+        <figure class="about__media">
+            <img src="./statics/game_intro.png" alt="Preview of the Infinity Travel time tunnel">
+            <figcaption>A sneak peek at the Infinity Travel arena you are about to enter.</figcaption>
+        </figure>
+        <p class="about__cta">
+            Isn't it exciting? What are you waiting for — let's <a href="./game.html">launch the game</a>!
         </p>
     </article>
-</div>
-
+</main>
 </body>
 </html>
+

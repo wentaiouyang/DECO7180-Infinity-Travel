@@ -4,37 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" type="text/css" href="./css/strip.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Infinity Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/strip.css"/>
 </head>
-<body onload="startGame()">
-    <div class="header">
-			<!-- onmousedown="RestartGame()" -->
-        <h1 class="title">INFINITY TRAVEL</h1>
-		<button class="gamebtn btn btnActive" onmousedown="RestartGame()">GAME</button>
-		<button class="gallery btn" >GALLERY</button>
-	</div>
-	<div id="loadin"></div>
-	<div class="gameoverbox">
-		<p class="gameover">Game Over</p>
-		<button class="restartbtn" onclick="RestartGame()">RESTART</button>
-	</div>
-	<div class="poppic">
-		<p>You got a new photo</p>
-	</div>
-	<div class="game">
-		<canvas id="c" width="1600" height="500"></canvas>
-		<p class="intro">Press <span>SPACE</span> to jump</p>
-	</div>
-	<div class="gallerypic">
-		<div id="pictures"></div>
-	</div>
+<body class="game-page" onload="startGame()">
+    <div class="background-glow" aria-hidden="true"></div>
+    <div class="game-shell">
+        <header class="header">
+            <div class="header__title">
+                <p class="header__eyebrow">Arcade mode</p>
+                <h1 class="title">Infinity Travel</h1>
+            </div>
+            <div class="header__actions">
+                <button class="gamebtn btn btnActive" onmousedown="RestartGame()">Game</button>
+                <button class="gallery btn">Gallery</button>
+            </div>
+        </header>
 
-	
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="./js/strip.pkgd.min.js"></script>
+        <main class="experience">
+            <div id="loadin" aria-live="polite"></div>
+            <div class="gameoverbox" role="alert">
+                <p class="gameover">Game Over</p>
+                <button class="restartbtn" onclick="RestartGame()">Restart</button>
+            </div>
+            <div class="poppic" role="dialog" aria-live="assertive">
+                <p>You got a new photo</p>
+            </div>
+
+            <section class="panel panel--game">
+                <div class="game">
+                    <canvas id="c" width="1600" height="500" aria-label="Infinity Travel playfield"></canvas>
+                    <p class="intro">Press <span>SPACE</span> to jump</p>
+                </div>
+            </section>
+
+            <section class="panel panel--gallery">
+                <div class="gallerypic">
+                    <div id="pictures"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/strip.pkgd.min.js"></script>
     <script src="./js/game.js"></script>
 </body>
 </html>
